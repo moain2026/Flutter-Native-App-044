@@ -4,7 +4,9 @@
 **الطالب:** جواد · **الحزمة:** `com.yecomarket.shop` · **الإصدار:** 1.0.0 (build 1) · Flutter 3.35.4 · **أندرويد فقط**
 
 **📱 آخر APK جاهز للتثبيت:** [`releases/YECO-v1.0.0.apk`](releases/YECO-v1.0.0.apk) (21 MB · arm64)
-**⬇️ رابط تحميل مباشر:** https://github.com/moain2026/Flutter-Native-App-044/raw/main/releases/YECO-v1.0.0.apk
+**⬇️ تحميل مباشر (GitHub Release):** https://github.com/moain2026/Flutter-Native-App-044/releases/download/v1.0.0/YECO-v1.0.0.apk
+**📦 صفحة الإصدار:** https://github.com/moain2026/Flutter-Native-App-044/releases/tag/v1.0.0
+**📁 نسخة داخل المستودع:** https://github.com/moain2026/Flutter-Native-App-044/raw/main/releases/YECO-v1.0.0.apk
 **🛠 كيف تبني APK بنفسك:** [`BUILD_GUIDE.md`](BUILD_GUIDE.md) · **🏗 المعمارية:** [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) · **📓 سجل التطوير:** [`docs/SESSION_LOG.md`](docs/SESSION_LOG.md) · **📝 ملاحظات الإصدار:** [`docs/RELEASE_NOTES_1.0.0.md`](docs/RELEASE_NOTES_1.0.0.md) · **🗂 الإصدارات:** [`CHANGELOG.md`](CHANGELOG.md)
 
 ## المصادقة (بالبريد الإلكتروني)
