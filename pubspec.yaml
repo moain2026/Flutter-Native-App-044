@@ -1,0 +1,45 @@
+name: yeco_market
+description: "YECO - تطبيق تسويق وبيع منتجات: أثاث، مواد غذائية، إلكترونيات، ملابس، منزل ومطبخ، رياضة — بدورَي زبون وبائع مع سلة وطلبات وقاعدة بيانات SQLite محلية."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  sqflite: ^2.3.3
+  shared_preferences: 2.5.3
+  http: 1.5.0
+  crypto: ^3.0.3
+  intl: any
+  path_provider: ^2.1.5
+  image_picker: ^1.1.2
+  # إرسال رموز التحقق (OTP) إلى بريد المستخدم عبر Gmail SMTP - أندرويد
+  mailer: ^7.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  sqflite_common_ffi: ^2.3.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/brand/
+    - assets/products/
+    - assets/categories/
+  fonts:
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Regular.ttf
+        - asset: assets/fonts/Tajawal-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Tajawal-ExtraBold.ttf
+          weight: 800

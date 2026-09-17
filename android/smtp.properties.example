@@ -1,0 +1,10 @@
+# انسخ هذا الملف إلى android/smtp.properties واملأ القيم.
+# الملف الحقيقي مُتجاهَل في .gitignore ولا يُرفع إلى GitHub أبداً.
+#
+# Gmail: فعّل "التحقق بخطوتين" ثم أنشئ "App password" (16 حرفاً) من
+# https://myaccount.google.com/apppasswords — كلمة مرور الحساب العادية لا تعمل.
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=465
+SMTP_USER=your.address@gmail.com
+SMTP_PASS=xxxx xxxx xxxx xxxx
+SMTP_NAME=YECO
