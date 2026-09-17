@@ -115,7 +115,7 @@ PopScope(canPop:false).onPopInvokedWithResult → Shell._onBack()
 | كلمات المرور | PBKDF2-HMAC-SHA256 × 12000 مع salt عشوائي، مقارنة بزمن ثابت |
 | OTP | 6 أرقام `Random.secure`، 10 دقائق، 5 محاولات، إعادة إرسال بعد 45 ث، يُحفظ SHA-256(salt\|code\|email\|purpose) فقط، استخدام لمرة واحدة، عزل الغرض (دخول/إنشاء/استعادة) |
 | بيانات SMTP | `--dart-define` وقت البناء من `android/smtp.properties` (مُتجاهَل في git) |
-| الترخيص | `license.json` من GitHub — API أولاً (بلا كاش) ثم raw؛ 404 = قفل نهائي |
+| الترخيص | `license.json` من GitHub — API أولاً (بلا كاش، مع `User-Agent` وإلا 403) ثم raw؛ 404 = قفل نهائي |
 | التحقق بخطوتين | مفعّل افتراضياً، قابل للإيقاف من الإعدادات |
 
 ---

@@ -141,6 +141,8 @@ class LicenseGate {
             headers: const {
               'Accept': 'application/vnd.github+json',
               'Cache-Control': 'no-cache',
+              // GitHub API يرفض الطلبات بلا User-Agent (403)؛ حزمة http لا ترسله افتراضياً
+              'User-Agent': 'YECO-Android/1.0 (+license-gate)',
             },
           )
           .timeout(_timeout);
@@ -161,7 +163,13 @@ class LicenseGate {
   static Future<_Remote?> _viaRaw() async {
     try {
       final r = await client
-          .get(rawUri(), headers: const {'Cache-Control': 'no-cache'})
+          .get(
+            rawUri(),
+            headers: const {
+              'Cache-Control': 'no-cache',
+              'User-Agent': 'YECO-Android/1.0 (+license-gate)',
+            },
+          )
           .timeout(_timeout);
       if (r.statusCode == 404) return _Remote.revokedFile;
       if (r.statusCode != 200) return null;

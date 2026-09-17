@@ -71,6 +71,7 @@
 | 11 | `LockedPage` لا يتغيّر عند تمرير verdict جديد | الحالة تُنسخ في `initState` فقط | `didUpdateWidget` |
 | 12 | مهلة أداة التنفيذ (دقيقتان) أقصر من بناء Gradle (~5 دقائق) | مهلة الأداة | `setsid nohup … &` وقراءة السجل لاحقاً |
 | 13 | JDK 21 هو الافتراضي في البيئة | تعارض مع Gradle | `JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64` قبل البناء |
+| 14 | **الترخيص الحي**: بعد تغيير `active:false` على GitHub ظل التطبيق يقرأ `true` | GitHub API يُرجع **403 بلا `User-Agent`** (حزمة `http` لا ترسله)، فسقط التطبيق إلى raw المُخزَّن في CDN لـ 5 دقائق | إضافة ترويسة `User-Agent` لطلبَي API وraw → التغيير يصل خلال ثوانٍ (اكتُشف بالتجربة الحية لا بالاختبارات الوهمية) |
 
 ---
 
@@ -100,7 +101,7 @@
 | APK | `aapt`: `com.yecomarket.shop` / 1.0.0 / 1 / YECO / arm64 · 21 MB |
 | التوقيع | `apksigner verify` ✔ CN=YECO Market |
 | SMTP | مضمّن في البناء عبر `--dart-define` (5 مفاتيح) |
-| الترخيص الحي | يُجرَّب بعد الرفع (§8) |
+| **الترخيص حياً على GitHub** | `active:true` → مفعّل ✔ · `active:false` → مقفول ✔ · كود خاطئ → مرفوض ✔ · `YECO-2026` → يفتح ويبقى ✔ · حذف الملف → موقوف نهائياً ولا يقبل الكود ✔ · إعادة الملف → عادي ✔ (`test/live_license_test.dart --run-skipped`) |
 
 ---
 

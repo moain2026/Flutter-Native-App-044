@@ -14,7 +14,7 @@
 | `lib/security/` | الترخيص البعيد، محرك OTP، SMTP، تجزئة كلمات المرور |
 | `tool/build_release.sh` | يبني APK ويمرّر إعدادات البريد من `android/smtp.properties` (§3.د) |
 | `android/smtp.properties.example` | نموذج إعدادات البريد — انسخه إلى `android/smtp.properties` (مُتجاهَل في git) |
-| `test/` | 3 ملفات اختبار (33 اختباراً): `security_test`, `repos_test`, `screens_test` + `helpers` |
+| `test/` | 3 ملفات اختبار (33 اختباراً): `security_test`, `repos_test`, `screens_test` + `helpers` + `live_license_test` (يدوي ضد GitHub الحقيقي) |
 | `assets/` | 24 صورة منتج + 6 صور تصنيف + شعار + خط Tajawal |
 | `android/` | مشروع أندرويد (الحزمة `com.yecomarket.shop`) — **أندرويد فقط، لا iOS ولا ويب** |
 | `license.json` | **ملف التحكم عن بُعد** — يقرأه التطبيق عند كل تشغيل (§6) |
